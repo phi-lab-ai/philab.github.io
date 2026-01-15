@@ -1,0 +1,22 @@
+---
+title: Kit Meng — Creative
+timezone: Asia/Kuala_Lumpur
+collections:
+  uploads:
+    title: Uploads
+    output: true
+  posts:
+    title: Work
+    output: true
+site:
+  description: www.kitmeng.com | I create digital experiences for the Web.
+baseurl: 
+url: http://kitmeng.com
+markdown: kramdown
+paginate: 25
+paginate_path: "/page/:num/"
+plugins:
+- jekyll-paginate
+- jekyll-seo-tag
+- neat
+highlighter: rouge
