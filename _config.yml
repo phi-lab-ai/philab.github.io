@@ -1,6 +1,6 @@
 ---
-title: PHI Lab
-timezone: UTC
+title: phiailab
+timezone: Asia/Shanghai
 collections:
   posts:
     title: Posts
@@ -8,3 +8,14 @@ collections:
   uploads:
     title: Uploads
     output: true
+description: 'phiailab
+
+'
+baseurl: 
+url: https://www.example.com
+paginate: 20
+paginate_path: "/page/:num/"
+plugins:
+- jekyll-sitemap
+- jekyll-seo-tag
+- jekyll-paginate
