@@ -18,5 +18,4 @@ paginate_path: "/page/:num/"
 plugins:
 - jekyll-paginate
 - jekyll-seo-tag
-- neat
 highlighter: rouge
