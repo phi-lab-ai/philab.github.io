@@ -1,21 +1,25 @@
 ---
 ---
 
-@charset "utf-8";
+@charset "utf-8"
+
+
+// Fonts
+@font-face
+  font-family: "WorkSans-Regular"
+  src: url('fonts/WorkSans-Regular.otf') format('opentype')
 
 @font-face
-  font-family: "BrandonText"
-<<<<<<< HEAD
-  src: url('fonts/BrandonText-Regular.otf') format('opentype')
-=======
-  src: url("fonts/BrandonText-Regular.otf") format("opentype")
-<<<<<<< HEAD
->>>>>>> parent of 02952e8 (Fix sass charset for GitHub Pages build)
-=======
->>>>>>> parent of 02952e8 (Fix sass charset for GitHub Pages build)
+  font-family: "WorkSans-Bold"
+  src: url('fonts/WorkSans-Bold.otf') format('opentype')
+
+@font-face
+  font-family: "WorkSans-Thin"
+  src: url('fonts/WorkSans-Thin.otf') format('opentype')
+
 
 // Our variables
-$base-font-family: "BrandonText", Helvetica, Arial, sans-serif
+$base-font-family: "WorkSans-Regular", Helvetica, Arial, sans-serif
 $base-font-size: 1em
 $small-font-size: $base-font-size * 0.875
 $base-line-height: 2
@@ -31,8 +35,7 @@ $grey-color-light: lighten($grey-color, 40%)
 $grey-color-dark: darken($grey-color, 25%)
 
 // Width of the content area
-$content-width: 800px
-
+$content-width: 1280px
 $on-palm: 600px
 $on-laptop: 800px
 
