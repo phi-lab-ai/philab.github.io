@@ -1,11 +1,11 @@
 ---
 ---
 
-@charset "utf-8"
+@charset "utf-8";
 
 @font-face
   font-family: "BrandonText"
-  src: url('fonts/BrandonText-Regular.otf') format('opentype')
+  src: url("fonts/BrandonText-Regular.otf") format("opentype")
 
 // Our variables
 $base-font-family: "BrandonText", Helvetica, Arial, sans-serif
@@ -29,24 +29,19 @@ $content-width: 800px
 $on-palm: 600px
 $on-laptop: 800px
 
-// Using media queries with like this:
-// @include media-query($on-palm) {
-//     .wrapper {
-//         padding-right: $spacing-unit / 2;
-//         padding-left: $spacing-unit / 2;
-//     }
-// }
 =media-query($device)
   @media screen and (max-width: $device)
     @content
 
 // Import partials from `sass_dir` (defaults to `_sass`)
-
 @import "base"
 @import "layout"
 @import "syntax-highlighting"
 
-.w-webflow-badge
+// Hide Webflow badge
+.w-webflow-badge,
+.w-webflow-badge *
   display: none !important
   visibility: hidden !important
   opacity: 0 !important
+  pointer-events: none !important
